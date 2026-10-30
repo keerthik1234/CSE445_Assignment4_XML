@@ -12,7 +12,7 @@
   <xsd:complexType name="ParkDetails">
     <xsd:sequence>
       <xsd:element name="Name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
-      <xs:element name="Phone" type="PhoneType" minOccurs="1" maxOccurs="unbounded" />
+      <xsd:element name="Phone" type="PhoneType" minOccurs="1" maxOccurs="unbounded" />
       <xsd:element name="Address" type="AddressType" minOccurs="1" maxOccurs="1"/>
     </xsd:sequence>
   </xsd:complexType>
@@ -28,29 +28,43 @@
     </xsd:restriction>
   </xsd:simpleType>
   <!--  Define the allowed format for an empty element with a string length of 0.  -->
-  <xs:simpleType name="EmptyType">
-    <xs:restriction base="xs:string">
-      <xs:length value="0"/>
-    </xs:restriction>
-  </xs:simpleType>
+  <xsd:simpleType name="EmptyType">
+    <xsd:restriction base="xsd:string">
+      <xsd:length value="0"/>
+    </xsd:restriction>
+  </xsd:simpleType>
   <!--  Define the allowed format for an up to one decimal rating out of 5.  -->
-  <xs:simpleType name="RatingType">
-    <xs:restriction base="xs:decimal">
-      <xs:fractionDigits value="1"/>
-      <xs:maxInclusive value="5"/>
-    </xs:restriction>
-  </xs:simpleType>
+  <xsd:simpleType name="RatingType">
+    <xsd:restriction base="xsd:decimal">
+      <xsd:fractionDigits value="1"/>
+      <xsd:maxInclusive value="5"/>
+    </xsd:restriction>
+  </xsd:simpleType>
   <!--  Define the allowed format for an address.  -->
-  <xs:complexType name="AddressType">
+  <xsd:complexType name="AddressType">
     <xsd:sequence>
       <xsd:element name="Number" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
-      <xs:element name="Street" type="xsd:string" minOccurs="1" maxOccurs="1" />
+      <xsd:element name="Street" type="xsd:string" minOccurs="1" maxOccurs="1" />
       <xsd:element name="City" type="xsd:string" minOccurs="1" maxOccurs="1"/>
       <xsd:element name="State" type="StateType" minOccurs="1" maxOccurs="1"/>
       <xsd:element name="Zip" type="ZipcodeType" minOccurs="1" maxOccurs="1"/>
       <xsd:attribute name="NearestAirport" type="xsd:string" use="required"/>
     </xsd:sequence>
-  </xs:complexType>  
+  </xsd:complexType>  
   <!--  Define the allowed format for a state name in the address format type.  -->
+  <xsd:element name="StateType">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:pattern value="[A-Z]{2}"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
   <!--  Define the allowed format for a five-digit zipcode in the address format type.  -->
+  <xsd:element name="ZipcodeType">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:pattern value="\d{5}"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
 </xsd:schema>
