@@ -40,4 +40,17 @@
       <xs:maxInclusive value="5"/>
     </xs:restriction>
   </xs:simpleType>
+  <!--  Define the allowed format for an address.  -->
+  <xs:complexType name="AddressType">
+    <xsd:sequence>
+      <xsd:element name="Number" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Street" type="xsd:string" minOccurs="1" maxOccurs="1" />
+      <xsd:element name="City" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="State" type="StateType" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="Zip" type="ZipcodeType" minOccurs="1" maxOccurs="1"/>
+      <xsd:attribute name="NearestAirport" type="xsd:string" use="required"/>
+    </xsd:sequence>
+  </xs:complexType>  
+  <!--  Define the allowed format for a state name in the address format type.  -->
+  <!--  Define the allowed format for a five-digit zipcode in the address format type.  -->
 </xsd:schema>
