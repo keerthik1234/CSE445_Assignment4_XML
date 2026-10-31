@@ -14,7 +14,7 @@
     </Address>
   </NationalPark>
 <!-- Instance 2 -->
-  <NationalPark Rating="4.8">
+  <NationalPark>
     <Name>Yellowstone National Park</Name>
     <Phone>307-344-7381</Phone>
     <Address NearestAirport="Yellowstone Airport">
@@ -39,7 +39,7 @@
     </Address>
   </NationalPark>
 <!-- Instance 4 -->
-  <NationalPark Rating="4.9">
+  <NationalPark>
     <Name>Crater Lake National Park</Name>
     <Phone>(541) 594-3000</Phone>
     <Address NearestAirport="Klamath Regional Airport">
@@ -63,7 +63,7 @@
     </Address>
   </NationalPark>
 <!-- Instance 6 -->
-  <NationalPark Rating="4.6">
+  <NationalPark>
     <Name>Gates of the Arctic National Park and Preserve</Name>
     <Phone>(907) 459-3730</Phone>
     <Address NearestAirport="Fairbanks International Airport">
