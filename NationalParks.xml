@@ -75,17 +75,15 @@
     </Address>
   </NationalPark>
 <!-- Instance 7 -->
-  <NationalPark Rating="">
-    <Name></Name>
-    <Phone></Phone>
-    <Phone></Phone>
-    <Phone></Phone>
-    <Address NearestAirport="">
-      <Number></Number>
-      <Street></Street>
-      <City></City>
-      <State></State>
-      <Zip></Zip>
+  <NationalPark Rating="4.8">
+    <Name>Zion National Park</Name>
+    <Phone>4357723256</Phone>
+    <Address NearestAirport="St. George Regional Airport">
+      <Number>1</Number>
+      <Street>Zion Park Blvd</Street>
+      <City>Springdale</City>
+      <State>UT</State>
+      <Zip>84767</Zip>
     </Address>
   </NationalPark>
 <!-- Instance 8 -->
