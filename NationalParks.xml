@@ -26,31 +26,28 @@
     </Address>
   </NationalPark>
 <!-- Instance 3 -->
-  <NationalPark Rating="">
-    <Name></Name>
-    <Phone></Phone>
-    <Phone></Phone>
-    <Phone></Phone>
-    <Address NearestAirport="">
-      <Number></Number>
-      <Street></Street>
-      <City></City>
-      <State></State>
-      <Zip></Zip>
+  <NationalPark Rating="4.8">
+    <Name>Yosemite National Park</Name>
+    <Phone>(209) 372-0200</Phone>
+    <Phone>209-372-0826</Phone>
+    <Address NearestAirport="Fresno Yosemite International Airport ">
+      <Number>9037</Number>
+      <Street>Village Drive</Street>
+      <City>Yosemite Valley</City>
+      <State>CA</State>
+      <Zip>95389</Zip>
     </Address>
   </NationalPark>
 <!-- Instance 4 -->
-  <NationalPark Rating="">
-    <Name></Name>
-    <Phone></Phone>
-    <Phone></Phone>
-    <Phone></Phone>
-    <Address NearestAirport="">
-      <Number></Number>
-      <Street></Street>
-      <City></City>
-      <State></State>
-      <Zip></Zip>
+  <NationalPark Rating="4.9">
+    <Name>Crater Lake National Park</Name>
+    <Phone>(541) 594-3000</Phone>
+    <Address NearestAirport="Klamath Regional Airport">
+      <Number>570</Number>
+      <Street>Rim Village Dr</Street>
+      <City>Crater Lake National Park</City>
+      <State>OR</State>
+      <Zip>97604</Zip>
     </Address>
   </NationalPark>
 <!-- Instance 5 -->
