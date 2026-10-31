@@ -51,31 +51,27 @@
     </Address>
   </NationalPark>
 <!-- Instance 5 -->
-  <NationalPark Rating="">
-    <Name></Name>
-    <Phone></Phone>
-    <Phone></Phone>
-    <Phone></Phone>
-    <Address NearestAirport="">
-      <Number></Number>
-      <Street></Street>
-      <City></City>
-      <State></State>
-      <Zip></Zip>
+  <NationalPark Rating="4.7">
+    <Name>Wrangell-St. Elias National Park & Preserve</Name>
+    <Phone>(907) 822-5234</Phone>
+    <Address NearestAirport="Ted Stevens Anchorage International Airport">
+      <Number>59</Number>
+      <Street>McCarthy Rd</Street>
+      <City>Chitina</City>
+      <State>AK</State>
+      <Zip>99566</Zip>
     </Address>
   </NationalPark>
 <!-- Instance 6 -->
-  <NationalPark Rating="">
-    <Name></Name>
-    <Phone></Phone>
-    <Phone></Phone>
-    <Phone></Phone>
-    <Address NearestAirport="">
-      <Number></Number>
-      <Street></Street>
-      <City></City>
-      <State></State>
-      <Zip></Zip>
+  <NationalPark Rating="4.6">
+    <Name>Gates of the Arctic National Park and Preserve</Name>
+    <Phone>(907) 459-3730</Phone>
+    <Address NearestAirport="Fairbanks International Airport">
+      <Number>4175</Number>
+      <Street>Geist Rd</Street>
+      <City>Fairbanks</City>
+      <State>AK</State>
+      <Zip>99709</Zip>
     </Address>
   </NationalPark>
 <!-- Instance 7 -->
