@@ -52,7 +52,7 @@
   </NationalPark>
 <!-- Instance 5 -->
   <NationalPark Rating="4.7">
-    <Name>Wrangell-St. Elias National Park & Preserve</Name>
+    <Name>Wrangell-St. Elias National Park &amp; Preserve</Name>
     <Phone>(907) 822-5234</Phone>
     <Address NearestAirport="Ted Stevens Anchorage International Airport">
       <Number>59</Number>
