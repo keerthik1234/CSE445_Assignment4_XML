@@ -7,7 +7,6 @@
     <xsd:sequence>
       <xsd:element name="NationalPark" type="ParkDetails" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
     </xsd:sequence>
-    <xsd:attribute name="Rating" type="RatingType" use="optional"/>
   </xsd:complexType>
   <xsd:complexType name="ParkDetails">
     <xsd:sequence>
@@ -15,6 +14,7 @@
       <xsd:element name="Phone" type="PhoneType" minOccurs="1" maxOccurs="unbounded" />
       <xsd:element name="Address" type="AddressType" minOccurs="1" maxOccurs="1"/>
     </xsd:sequence>
+    <xsd:attribute name="Rating" type="RatingType" use="optional"/>
   </xsd:complexType>
   <!--  Define the allowed format for the Phone number with a regular exp.  -->
   <xsd:simpleType name="PhoneType">
