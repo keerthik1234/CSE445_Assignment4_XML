@@ -4,9 +4,7 @@
   </xsd:annotation>
   <xsd:element name="NationalParks" type="ParksType"/>
   <xsd:complexType name="ParksType">
-    <xsd:sequence>
-      <xsd:element name="NationalPark" type="ParkDetails" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
-    </xsd:sequence>
+    <xsd:element name="NationalPark" type="ParkDetails" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
     <xsd:attribute name="Rating" type="RatingType" use="optional"/>
   </xsd:complexType>
   <xsd:complexType name="ParkDetails">
