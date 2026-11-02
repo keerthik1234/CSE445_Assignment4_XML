@@ -6,8 +6,8 @@
   <xsd:complexType name="ParksType">
     <xsd:sequence>
       <xsd:element name="NationalPark" type="ParkDetails" minOccurs="0" maxOccurs="unbounded"/>
-      <xsd:attribute name="Rating" type="RatingType" use="optional"/>
     </xsd:sequence>
+    <xsd:attribute name="Rating" type="RatingType" use="optional"/>
   </xsd:complexType>
   <xsd:complexType name="ParkDetails">
     <xsd:sequence>
@@ -48,8 +48,8 @@
       <xsd:element name="City" type="xsd:string" minOccurs="1" maxOccurs="1"/>
       <xsd:element name="State" type="StateType" minOccurs="1" maxOccurs="1"/>
       <xsd:element name="Zip" type="ZipcodeType" minOccurs="1" maxOccurs="1"/>
-      <xsd:attribute name="NearestAirport" type="xsd:string" use="required"/>
     </xsd:sequence>
+    <xsd:attribute name="NearestAirport" type="xsd:string" use="required"/>
   </xsd:complexType>  
   <!--  Define the allowed format for a state name in the address format type.  -->
   <xsd:element name="StateType">
