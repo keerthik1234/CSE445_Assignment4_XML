@@ -19,9 +19,7 @@
   <!--  Define the allowed format for the Phone number with a regular exp.  -->
   <xsd:simpleType name="PhoneType">
     <xsd:restriction base="xsd:string">
-      <xsd:pattern value="\d{3}-\d{3}-\d{4}"/>
-      <xsd:pattern value="\(\d{3}\) \d{3}-\d{4}"/>
-      <xsd:pattern value="\d{10}"/>
+      <xsd:pattern value="\d{3}-\d{3}-\d{4}|\(\d{3}\) \d{3}-\d{4}|\d{10}"/>
     </xsd:restriction>
   </xsd:simpleType>
   <!--  Define the allowed format for an empty element with a string length of 0.  -->
