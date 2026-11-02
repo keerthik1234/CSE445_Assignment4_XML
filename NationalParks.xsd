@@ -51,7 +51,7 @@
     </xsd:restriction>
   </xsd:simpleType>
   <!--  Define the allowed format for a five-digit zipcode in the address format type.  -->
-  <xsd:simpleType>
+  <xsd:simpleType name="ZipcodeType">
     <xsd:restriction base="xsd:string">
       <xsd:pattern value="\d{5}"/>
     </xsd:restriction>
